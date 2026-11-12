@@ -1,60 +1,74 @@
-Arbitrary Precision Calculator in C
-📌 Project Overview
-An Arbitrary Precision Calculator is a calculator that performs arithmetic operations on numbers larger than the range supported by standard C data types.
+# 🧮 Arbitrary Precision Calculator in C
 
-This project implements an Arbitrary Precision Calculator using C programming and Data Structures, allowing operations on large numbers by storing and processing digits individually.
+## 📌 Project Overview
 
-🚀 Features
-Performs arithmetic operations on large numbers.
-Supports numbers beyond standard integer data type limits.
-Handles positive and negative numbers.
-Implements digit-by-digit arithmetic operations.
-Uses Data Structures for efficient number representation and processing.
-Includes input validation and error handling.
-🔹 Supported Operations
-Addition +
-Subtraction -
-Multiplication *
-Division /
-Modulus %
-⚠️ Error Handling
-The program handles common errors such as:
+A command-line **Arbitrary Precision Calculator (APC)** developed using **C and Data Structures** to perform arithmetic operations on very large numbers beyond the limits of standard C data types.
 
-Invalid input
-Invalid operators
-Division by zero
-Incorrect number formats
-🛠️ Technologies Used
-Language: C
-Concepts: Data Structures, Dynamic Memory Allocation, Pointers, String Handling
-Compiler: GCC
-Platform: Linux
-▶️ How to Run
-1. Clone the Repository
-git clone <your-repository-url>
-2. Navigate to the Project Directory
-cd Arbitrary-Precision-Calculator
-3. Compile the Program
+Large numbers are processed digit-by-digit using **linked-list based data structures**.
+
+## 🚀 Features
+
+- ➕ Addition
+- ➖ Subtraction
+- ✖️ Multiplication (`x` / `X`)
+- ➗ Division
+- 🔢 Supports very large numbers
+- 🔗 Linked-list based number processing
+- 💻 Command-line argument support
+- ⚠️ Input and operator validation
+
+## 🛠️ Technologies
+
+- **Language:** C
+- **Data Structure:** Doubly Linked List
+- **Concepts:** Pointers, Dynamic Memory Allocation, Structures, Command Line Arguments
+- **Compiler:** GCC
+- **Platform:** Linux / WSL
+
+## ▶️ Compilation
+
+```bash
 gcc *.c -o calculator
-4. Run the Program
-./calculator
-📂 Project Structure
-Arbitrary-Precision-Calculator/
-│
-├── main.c
-├── apc.c
-├── apc.h
-├── operations.c
-├── operations.h
-└── README.md
-📌 Sample Input
-Enter the expression:
-123456789123456789123456789 + 987654321987654321987654321
-📌 Sample Output
-1111111111111111111111111110
-🎯 Learning Outcomes
-Understood how arbitrary precision arithmetic works.
-Implemented arithmetic operations on large numbers using C.
-Strengthened understanding of Data Structures and pointers.
-Gained practical experience with dynamic memory allocation.
-Improved problem-solving and algorithmic thinking.
+```
+
+## ▶️ Usage
+
+```bash
+./calculator operand1 operator operand2
+```
+
+### Example
+
+```bash
+./calculator 12345678910111213141516171819 + 9876543210123456789
+```
+
+### Output
+
+```text
+Result : 12345678919987756351639628608
+```
+
+## 📌 Supported Operators
+
+```text
++  Addition
+-  Subtraction
+x  Multiplication
+X  Multiplication
+/  Division
+```
+
+## 🎯 Learning Outcomes
+
+- Implemented large-number arithmetic from scratch.
+- Strengthened C programming and Data Structures skills.
+- Practiced pointers and dynamic memory allocation.
+- Implemented arithmetic operations using linked lists.
+- Improved algorithmic and problem-solving skills.
+
+## 👨‍💻 Author
+
+**Shaik Azmeer**
+
+*C Programming | Data Structures | Embedded Systems*
